@@ -36,7 +36,7 @@ Este proyecto consiste en una aplicación gráfica desarrollada en C# y Windows 
 ## Tecnologías Utilizadas
 
 * C#
-* .NET Framework 4.8
+* .NET Framework 
 * Windows Forms
 * GDI+ para renderizado gráfico
 
