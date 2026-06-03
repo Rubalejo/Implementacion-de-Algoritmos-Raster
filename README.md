@@ -38,12 +38,7 @@ Este proyecto consiste en una aplicación gráfica desarrollada en C# y Windows 
 * C#
 * .NET Framework 
 * Windows Forms
-* GDI+ para renderizado gráfico
 
 ## Objetivo Académico
 
 El proyecto fue desarrollado con fines educativos para comprender el funcionamiento interno de los algoritmos ráster y analizar las diferencias entre distintos métodos de generación de gráficos en computación.
-
-## Autor
-
-Proyecto desarrollado como práctica académica de Computación Gráfica.
