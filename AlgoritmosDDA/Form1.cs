@@ -1,4 +1,6 @@
 ﻿using AlgoritmosDDA.Formularios;
+using LiangBarskyApp;
+using NLNApp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,6 +73,24 @@ namespace AlgoritmosDDA
         {
             ScanlineFill scanlineFill = new ScanlineFill();
             scanlineFill.Show();
+        }
+
+        private void cohenSutherlandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CohenSutherlandForm cohenSutherlandForm = new CohenSutherlandForm();
+            cohenSutherlandForm.Show();
+        }
+
+        private void liangBarskyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LiangBarskyForm liangBarskyForm = new LiangBarskyForm();
+            liangBarskyForm.Show();
+        }
+
+        private void nichollLeeNichollToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NichollLeeNichollForm nichollLeeNichollForm = new NichollLeeNichollForm();
+            nichollLeeNichollForm.Show();
         }
     }
 }

@@ -46,6 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\ClipWindow.cs" />
+    <Compile Include="Clases\CohenSutherland.cs" />
+    <Compile Include="Formularios\Cohen_Sutherland.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cohen_Sutherland.Designer.cs">
+      <DependentUpon>Cohen_Sutherland.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\DrawingToolMode.cs" />
     <Compile Include="Formularios\BoundaryFill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +116,21 @@
       <DependentUpon>FrmCirculoMatrices.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\Matrices.cs" />
+    <Compile Include="Clases\LineSegment.cs" />
+    <Compile Include="Clases\Liangbarsky.cs" />
+    <Compile Include="Formularios\Liangbarskyform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Liangbarskyform.Designer.cs">
+      <DependentUpon>Liangbarskyform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Nichollleenicholl.cs" />
+    <Compile Include="Formularios\Nichollleenichollform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Nichollleenichollform.Designer.cs">
+      <DependentUpon>Nichollleenichollform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clases\PuntoMedioRecta.cs" />
@@ -117,6 +141,9 @@
       <DependentUpon>ScanlineFill.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\ScanlineHelper.cs" />
+    <EmbeddedResource Include="Formularios\Cohen_Sutherland.resx">
+      <DependentUpon>Cohen_Sutherland.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FloodFill.resx">
       <DependentUpon>FloodFill.cs</DependentUpon>
     </EmbeddedResource>

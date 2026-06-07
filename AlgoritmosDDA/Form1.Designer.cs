@@ -41,6 +41,10 @@
             this.floodFillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boundaryFillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scanLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recorteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cohenSutherlandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liangBarskyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nichollLeeNichollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +54,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.algoritmosDDAToolStripMenuItem,
             this.circuloDDAToolStripMenuItem,
-            this.rellenoToolStripMenuItem});
+            this.rellenoToolStripMenuItem,
+            this.recorteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1200, 24);
@@ -73,21 +78,21 @@
             // ejercicio1ToolStripMenuItem
             // 
             this.ejercicio1ToolStripMenuItem.Name = "ejercicio1ToolStripMenuItem";
-            this.ejercicio1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ejercicio1ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.ejercicio1ToolStripMenuItem.Text = "Recta";
             this.ejercicio1ToolStripMenuItem.Click += new System.EventHandler(this.ejercicio1ToolStripMenuItem_Click);
             // 
             // puntoMedioToolStripMenuItem
             // 
             this.puntoMedioToolStripMenuItem.Name = "puntoMedioToolStripMenuItem";
-            this.puntoMedioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.puntoMedioToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.puntoMedioToolStripMenuItem.Text = "Punto Medio";
             this.puntoMedioToolStripMenuItem.Click += new System.EventHandler(this.puntoMedioToolStripMenuItem_Click);
             // 
             // curvaDeBézierToolStripMenuItem
             // 
             this.curvaDeBézierToolStripMenuItem.Name = "curvaDeBézierToolStripMenuItem";
-            this.curvaDeBézierToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.curvaDeBézierToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.curvaDeBézierToolStripMenuItem.Text = "Curva de Bézier";
             this.curvaDeBézierToolStripMenuItem.Click += new System.EventHandler(this.curvaDeBézierToolStripMenuItem_Click);
             // 
@@ -132,31 +137,66 @@
             this.floodFillToolStripMenuItem,
             this.boundaryFillToolStripMenuItem,
             this.scanLineToolStripMenuItem});
+            this.rellenoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rellenoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Window;
             this.rellenoToolStripMenuItem.Name = "rellenoToolStripMenuItem";
-            this.rellenoToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.rellenoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.rellenoToolStripMenuItem.Text = "Relleno";
             // 
             // floodFillToolStripMenuItem
             // 
             this.floodFillToolStripMenuItem.Name = "floodFillToolStripMenuItem";
-            this.floodFillToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.floodFillToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.floodFillToolStripMenuItem.Text = "Flood Fill";
             this.floodFillToolStripMenuItem.Click += new System.EventHandler(this.floodFillToolStripMenuItem_Click);
             // 
             // boundaryFillToolStripMenuItem
             // 
             this.boundaryFillToolStripMenuItem.Name = "boundaryFillToolStripMenuItem";
-            this.boundaryFillToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.boundaryFillToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.boundaryFillToolStripMenuItem.Text = "Boundary Fill";
             this.boundaryFillToolStripMenuItem.Click += new System.EventHandler(this.boundaryFillToolStripMenuItem_Click);
             // 
             // scanLineToolStripMenuItem
             // 
             this.scanLineToolStripMenuItem.Name = "scanLineToolStripMenuItem";
-            this.scanLineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.scanLineToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.scanLineToolStripMenuItem.Text = "Scan Line";
             this.scanLineToolStripMenuItem.Click += new System.EventHandler(this.scanLineToolStripMenuItem_Click);
+            // 
+            // recorteToolStripMenuItem
+            // 
+            this.recorteToolStripMenuItem.BackColor = System.Drawing.SystemColors.Desktop;
+            this.recorteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cohenSutherlandToolStripMenuItem,
+            this.liangBarskyToolStripMenuItem,
+            this.nichollLeeNichollToolStripMenuItem});
+            this.recorteToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recorteToolStripMenuItem.ForeColor = System.Drawing.Color.GhostWhite;
+            this.recorteToolStripMenuItem.Name = "recorteToolStripMenuItem";
+            this.recorteToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.recorteToolStripMenuItem.Text = "Recorte";
+            // 
+            // cohenSutherlandToolStripMenuItem
+            // 
+            this.cohenSutherlandToolStripMenuItem.Name = "cohenSutherlandToolStripMenuItem";
+            this.cohenSutherlandToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.cohenSutherlandToolStripMenuItem.Text = "Cohen - Sutherland";
+            this.cohenSutherlandToolStripMenuItem.Click += new System.EventHandler(this.cohenSutherlandToolStripMenuItem_Click);
+            // 
+            // liangBarskyToolStripMenuItem
+            // 
+            this.liangBarskyToolStripMenuItem.Name = "liangBarskyToolStripMenuItem";
+            this.liangBarskyToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.liangBarskyToolStripMenuItem.Text = "Liang - Barsky";
+            this.liangBarskyToolStripMenuItem.Click += new System.EventHandler(this.liangBarskyToolStripMenuItem_Click);
+            // 
+            // nichollLeeNichollToolStripMenuItem
+            // 
+            this.nichollLeeNichollToolStripMenuItem.Name = "nichollLeeNichollToolStripMenuItem";
+            this.nichollLeeNichollToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.nichollLeeNichollToolStripMenuItem.Text = "Nicholl - Lee - Nicholl";
+            this.nichollLeeNichollToolStripMenuItem.Click += new System.EventHandler(this.nichollLeeNichollToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -192,5 +232,9 @@
         private System.Windows.Forms.ToolStripMenuItem floodFillToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem boundaryFillToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scanLineToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem recorteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cohenSutherlandToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem liangBarskyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nichollLeeNichollToolStripMenuItem;
     }
 }
